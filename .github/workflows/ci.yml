@@ -18,23 +18,20 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Setup Node.js and pnpm
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: 'pnpm'
-
-      - name: Install pnpm
-        run: npm install -g pnpm
+          cache: 'npm'
 
       - name: Install Dependencies
-        run: pnpm install --frozen-lockfile
+        run: npm install
 
       - name: Run Tests
-        run: pnpm test
+        run: npm test
 
       - name: Lint Code
-        run: pnpm run lint
+        run: npm run lint
 
-      - name: Build Application
-        run: pnpm run build
+      - name: Build Application (if applicable)
+        run: npm run build
