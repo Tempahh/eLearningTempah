@@ -160,7 +160,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## **Author**
 - Tempah
-- GitHub: [your-username](https://github.com/tempahh)
+- GitHub: [Tempahh](https://github.com/tempahh)
 - Email: plance991@gmail.com
 
 ---
