@@ -1,13 +1,13 @@
 const express = require('express');
 const Course = require('../models/Course');
-const auth = require('../middleware/auth');
+const auth  = require('../middleware/auth');
 const {body, validationResult} = require('express-validator');
 
 const router = express.Router();
 
 // Create a new course
 router.post(
-    '/',
+    '/create',
     auth,
     [
         body('title').notEmpty().withMessage('Title is required'),
@@ -102,3 +102,5 @@ router.post("/:id/enroll", auth, async (req, res) => {
         res.status(500).json({ message: 'Internal Server Error', error: error.message });
     }
 });
+
+module.exports = router;
