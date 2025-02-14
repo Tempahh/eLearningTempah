@@ -83,7 +83,7 @@ The server will start at `http://localhost:5000`.
 ## **Deployment**
 The API is deployed on **Render.com**. You can access it at:
 ```
-https://<your-render-app-url>
+https://thescribe.onrender.com
 ```
 
 ---
