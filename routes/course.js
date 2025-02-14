@@ -39,7 +39,7 @@ router.post(
 );
 
 //update course
-router.put("/:id", auth, async (req, res) => {
+router.put("/update/:id", auth, async (req, res) => {
     try {
         if (req.user.role !== 'admin') {
             return res.status(403).json({ message: 'Unauthorized' });
@@ -61,7 +61,7 @@ router.put("/:id", auth, async (req, res) => {
 });
 
 //delete course
-router.delete("/:id", auth, async (req, res) => {
+router.delete("/delete/:id", auth, async (req, res) => {
     try {
         if (req.user.role !== 'admin') {
             return res.status(403).json({ message: 'Unauthorized' });
@@ -82,7 +82,7 @@ router.delete("/:id", auth, async (req, res) => {
 });
 
 //enroll in course
-router.post("/:id/enroll", auth, async (req, res) => {
+router.post("/enroll/:id", auth, async (req, res) => {
     try {
         const course = await Course.findById(req.params.id);
         if (!course) {
