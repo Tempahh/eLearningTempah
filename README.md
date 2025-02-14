@@ -1,7 +1,3 @@
-You're absolutely right! I missed including the **Postman documentation link** with the "Run in Postman" button. Here's the updated **README** with the Postman button included:
-
----
-
 # **E-learning Platform RESTful API**
 
 ![GitHub](https://img.shields.io/badge/License-MIT-blue)
