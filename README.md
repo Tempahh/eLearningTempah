@@ -38,7 +38,6 @@ A RESTful API for managing online courses and students. This platform allows cou
 
 ### **Course Routes**
 | **Endpoint**               | **Method** | **Description**                     | **Access**       |
-|----------------------------|------------|-------------------------------------|------------------|
 | `/api/courses`             | POST       | Create a new course                 | Admin            |
 | `/api/courses/:id`         | PUT        | Update a course by ID               | Admin            |
 | `/api/courses/:id`         | DELETE     | Delete a course by ID               | Admin            |
@@ -89,9 +88,9 @@ https://thescribe.onrender.com
 ---
 
 ## **API Documentation**
-The API is documented using Postman. You can access the Postman collection below:
+The API is documented using Postman. You can access the Postman collection using this link:
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://god.gw.postman.com/run-collection/26287494-ea68ad85-caef-4e87-8d9b-36cae57d2ecc?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D26287494-ea68ad85-caef-4e87-8d9b-36cae57d2ecc%26entityType%3Dcollection%26workspaceId%3Dc98a2062-634c-46d9-8a54-e9fbeecd775d)
+[Postman Collection Link](https://www.postman.com/aliencampz/scribeteam/collection/wmlo3ea/thescribe)
 
 ---
 
@@ -172,8 +171,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-### **How to Use the Postman Button**
-1. Click the **"Run in Postman"** button above.
+### **How to Use the Postman Collection Link**
+1. Click the link above.
 2. It will redirect you to Postman, where you can fork the collection into your workspace.
 3. Use the collection to test the API endpoints.
 
